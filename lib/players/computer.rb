@@ -9,11 +9,13 @@ module Players
     #returns FIRST almost win detected
     def almost_win(token)
       combos = Game::WIN_COMBINATIONS
+      board = Game.board.cells
       xs = 0
       os = 0 
       blanks = 0 
       combos.each do |c|
-        
+        c.each do |position|
+          i
       end 
       
     end 
