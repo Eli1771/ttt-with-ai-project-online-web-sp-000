@@ -15,7 +15,7 @@ case count
     token = gets.chomp
     if token.downcase == "x" 
       game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
-    elsif token.downcase == "y"
+    elsif token.downcase == "o"
       game = Game.new(Players::Computer.new("X"))
     else 
       puts "Invalid response!"
