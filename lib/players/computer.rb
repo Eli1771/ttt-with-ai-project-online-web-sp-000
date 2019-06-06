@@ -5,7 +5,7 @@ module Players
     
     #looks for 2 of 3 win combo positions for a particular token
     #3rd space in combo must be !taken?
-    #returns false if no almost win present 
+    #returns nil if no almost win present 
     #returns FIRST almost win detected
     def almost_win(token)
       combos = Game::WIN_COMBINATIONS
@@ -24,7 +24,8 @@ module Players
         end 
         #after each combo check for an almost win and reset counters
         if tokens == 2 && blanks == 1 
-          return 
+          return win_space
+          break
         end 
       end 
       
