@@ -10,12 +10,20 @@ module Players
     def almost_win(token)
       combos = Game::WIN_COMBINATIONS
       board = Game.board.cells
-      xs = 0
-      os = 0 
+      tokens = 0
       blanks = 0 
+      win_space = ""
       combos.each do |c|
         c.each do |position|
-          i
+          if board[position] == token
+            tokens += 1 
+          elsif board[position] == " "
+            blanks += 1 
+            
+          end 
+        end 
+        #after each combo check for an almost win and reset counters
+        if tokens == 2 ++
       end 
       
     end 
