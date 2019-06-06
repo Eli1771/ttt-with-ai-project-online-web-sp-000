@@ -9,7 +9,7 @@ module Players
     #returns FIRST almost win detected
     def almost_win(token)
       combos = Game::WIN_COMBINATIONS
-      
+      me
     end 
     
     def move(board) 
